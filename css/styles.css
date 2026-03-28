@@ -46,7 +46,7 @@ img {
 }
 
 .header {
-  padding-block: 24px;
+border-bottom: 1px solid #e7e9fc
 }
 
 .header .container {
@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -65,6 +65,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 24px;
 }
 
 .header-logo {
@@ -89,6 +90,7 @@ gap: 40px;
 
 .header-adress {
 margin-left: auto;
+padding-block: 24px;
 }
 
 .header-adress-list {
@@ -168,7 +170,7 @@ background-color: #404BBF;
 .features-list {
 display: flex;
 gap: 24px;
-}/
+}
 
 .features-item {
 width: calc((100% - 24px * 3) / 4);
@@ -193,7 +195,7 @@ margin-top: 8px;
 .team {
 background: #f4f4fd;
 padding-top: 120px;
-padding-bottom: 132px;
+padding-bottom: 120px;
 }
 
 .team-title {
@@ -261,13 +263,12 @@ margin-bottom: 72px;
 .port-list {
 display: flex;
 flex-wrap: wrap;
-gap: 44px 24px;
+gap: 48px 24px;
 }
 
 .port-item {
 background: #fff;
 height: 415px;
-border: 1px solid #e7e9fc;
 width: calc((100% - 24px * 2) / 3);
 }
 
@@ -307,6 +308,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
+margin-bottom: 16px;
 }
 
 .foot-logo-span {
