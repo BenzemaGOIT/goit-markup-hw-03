@@ -49,16 +49,16 @@ img {
 border-bottom: 1px solid #e7e9fc
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .container {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+}
+
+.container-header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -85,7 +85,6 @@ color: #4d5ae5;
 
 .header-list {
 display: flex;
-padding-block: 24px;
 gap: 40px;
 }
 
@@ -104,7 +103,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
-padding-block: 24px;
+padding: 24px 0;
 }
 
 .header-link:hover,
@@ -117,7 +116,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-padding-block: 24px;
+padding: 24px 0;
 }
 
 .header-adress-link:hover,
@@ -248,6 +247,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+margin-top: 8px;
 }
 
 .port {
@@ -293,9 +293,6 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-margin-top: 32px;
-margin-bottom: 8px;
-margin-left: 16px;
 }
 
 .port-item-text {
@@ -303,7 +300,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-margin-left: 16px;
+margin-top: 8px;
 }
 
 .foot {
