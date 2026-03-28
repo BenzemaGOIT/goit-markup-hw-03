@@ -6,6 +6,12 @@ body {
 
 ul {
   list-style-type: none;
+  margin-block: 0;
+  padding-left: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin-block: 0;
 }
 
 a {
@@ -20,6 +26,47 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  padding-block: 24px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-logo {
 font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -28,10 +75,25 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #2e2f42;
+margin-right: 76px;
 }
 
 .header-logo-span {
 color: #4d5ae5;
+}
+
+.header-list {
+display: flex;
+gap: 40px;
+}
+
+.header-adress {
+margin-left: auto;
+}
+
+.header-adress-list {
+display: flex;
+gap: 40px;
 }
 
 .header-link {
@@ -61,6 +123,8 @@ color: #434455;
 
 .main-section {
 background-color: #2e2f42;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .main-section-title {
@@ -70,6 +134,8 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+max-width: 496px;
+margin: 0 auto 48px;
 }
 
 .main-section-button {
@@ -80,6 +146,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
+border-radius: 4px;
+padding: 16px 32px;
+height: 56px;
+border: none;
+min-width: 169px;
+display: block;
+margin: 0 auto;
 }
 
 .main-section-button:hover,
@@ -87,17 +160,19 @@ color: #fff;
 background-color: #404BBF;
 }
 
-/*.features {
-}*/
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
-/*.visually-hidden {
-}*/
+.features-list {
+display: flex;
+gap: 24px;
+}/
 
-/*.features-list {
-}*/
-
-/*.features-item {
-}*/
+.features-item {
+width: calc((100% - 24px * 3) / 4);
+}
 
 .features-subtitle {
 font-weight: 500;
@@ -111,11 +186,14 @@ color: #2e2f42;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;    
+color: #434455;
+margin-top: 8px;
 }
 
 .team {
 background: #f4f4fd;
+padding-top: 120px;
+padding-bottom: 132px;
 }
 
 .team-title {
@@ -125,14 +203,22 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 72px;
 }
 
-/*.team-list {
-}*/
+.team-list {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
 
 .team-item {
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
+border-radius: 0 0 4px 4px;
+padding: 0px 0px 32px;
+height: 380px;
+width: calc((100% - 24px * 3) / 4);
 }
 
 /*.team-photo {
@@ -145,6 +231,8 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-top: 32px;
+margin-bottom: 8px;
 }
 
 .team-position {
@@ -155,8 +243,10 @@ text-align: center;
 color: #434455;
 }
 
-/*.port {
-}*/
+.port {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .port-title {
 font-weight: 700;
@@ -165,13 +255,20 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 72px;
 }
 
-/*.port-list {
-}*/
+.port-list {
+display: flex;
+flex-wrap: wrap;
+gap: 44px 24px;
+}
 
 .port-item {
 background: #fff;
+height: 415px;
+border: 1px solid #e7e9fc;
+width: calc((100% - 24px * 2) / 3);
 }
 
 /*.port-photo {
@@ -183,6 +280,9 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-top: 32px;
+margin-bottom: 8px;
+margin-left: 16px;
 }
 
 .port-item-text {
@@ -190,10 +290,13 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+margin-left: 16px;
 }
 
 .foot {
 background: #2e2f42;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .foot-logo {
@@ -215,4 +318,5 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+width: 264px;
 }
