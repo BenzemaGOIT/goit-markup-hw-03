@@ -274,8 +274,8 @@ background: #fff;
 width: calc((100% - 24px * 2) / 3);
 }
 
-/*.port-photo {
-}*/
+.port-photo {
+}
 
 .port-content {
 padding: 32px 16px;
