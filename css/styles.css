@@ -65,7 +65,6 @@ border-bottom: 1px solid #e7e9fc
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 24px;
 }
 
 .header-logo {
@@ -77,6 +76,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #2e2f42;
 margin-right: 76px;
+padding-block: 24px;
 }
 
 .header-logo-span {
@@ -85,12 +85,12 @@ color: #4d5ae5;
 
 .header-list {
 display: flex;
+padding-block: 24px;
 gap: 40px;
 }
 
 .header-adress {
 margin-left: auto;
-padding-block: 24px;
 }
 
 .header-adress-list {
@@ -104,6 +104,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding-block: 24px;
 }
 
 .header-link:hover,
@@ -116,6 +117,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+padding-block: 24px;
 }
 
 .header-adress-link:hover,
@@ -219,12 +221,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 background: #fff;
 border-radius: 0 0 4px 4px;
 padding: 0px 0px 32px;
-height: 380px;
+max-height: 380px;
 width: calc((100% - 24px * 3) / 4);
 }
 
 /*.team-photo {
 }*/
+
+.team-content {
+  padding: 32px 16px;
+  text-align: center;
+}
 
 .team-name {
 font-weight: 500;
@@ -233,8 +240,6 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
-margin-top: 32px;
-margin-bottom: 8px;
 }
 
 .team-position {
@@ -268,12 +273,19 @@ gap: 48px 24px;
 
 .port-item {
 background: #fff;
-height: 415px;
+max-height: 415px;
 width: calc((100% - 24px * 2) / 3);
 }
 
 /*.port-photo {
 }*/
+
+.port-content {
+padding: 32px 16px;
+border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+}
 
 .port-item-title {
 font-weight: 500;
@@ -309,6 +321,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
 margin-bottom: 16px;
+display: block;
 }
 
 .foot-logo-span {
@@ -320,5 +333,5 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
-width: 264px;
+max-width: 264px;
 }
